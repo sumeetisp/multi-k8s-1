@@ -14,7 +14,7 @@ before_install:
   - gcloud config set project multi-k8s-255204
   - gcloud config set compute/zone asia-southeast1-a
   - gcloud container clusters get-credentials standard-cluster-1
-  - echo "$DOCKER_PASSWORD" | docker login --username "$DOCKER_USERNAME" --password-stdin
+  - docker login --username sumeetisp --password "Bumblebee@9"
   - docker build -t sumeetisp/react-test -f ./client/Dockerfile.dev ./client
 
 script:
